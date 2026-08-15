@@ -42,7 +42,7 @@ function renderSchedule(){
   ["AUG 14, 2026","Yomuri Giants  vs  Kiwoom Heros","FINAL · 6 - 0"],
   ["AUG 15, 2026","Kiwoom Heros  vs  Yomuri Giants","FINAL · 1 - 0"],
   ["AUG 16, 2026","Yomuri Giants  vs  Kiwoom Heros","15:00 KST"],
-  ["AUG 17, 2026","            OFF DAY            "],
+  ["AUG 17, 2026","            OFF DAY            ","None"],
   ["AUG 18, 2026","Yomuri Giants  vs  Kiwoom Heros","20:00 KST"]
  ].map(g=>`<div class="game"><div class="game-date">${g[0]}</div><div class="game-teams">${g[1]}</div><div class="game-result">${g[2]}</div></div>`).join("");
 }
