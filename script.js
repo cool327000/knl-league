@@ -39,9 +39,9 @@ function renderTeams(){
 }
 function renderSchedule(){
  document.querySelector("#scheduleList").innerHTML=[
-  ["AUG 15, 2026","Yomuri Giants  vs  Samsung Lions","FINAL · 6 - 3"],
-  ["AUG 17, 2026","Samsung Lions  vs  Yomuri Giants","21:30 KST"],
-  ["AUG 18, 2026","Yomuri Giants  vs  Samsung Lions","21:30 KST"]
+  ["AUG 14, 2026","Kiwoom Heros  vs  Yomuri Giants","FINAL · 0 - 6"],
+  ["AUG 15, 2026","Yomuri Giants  vs  Kiwoom Heros","FINAL · 0 - 1"],
+  ["AUG 18, 2026","Kiwoom Heros  vs  Yomuri Giants","15:00 KST"]
  ].map(g=>`<div class="game"><div class="game-date">${g[0]}</div><div class="game-teams">${g[1]}</div><div class="game-result">${g[2]}</div></div>`).join("");
 }
 function renderStats(){
