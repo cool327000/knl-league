@@ -1,6 +1,6 @@
 const teams=[
- {name:"Yomuri Giants",abbr:"YG",gp:1,w:1,l:0,d:0,r:6,ra:3,streak:"W1",l10:"1-0"},
- {name:"Samsung Lions",abbr:"SL",gp:1,w:0,l:1,d:0,r:3,ra:6,streak:"L1",l10:"0-1"}
+ {name:"Yomuri Giants",abbr:"YG",gp:1,w:1,l:0,d:0,r:6,ra:0,streak:"W1",l10:"1-0"},
+ {name:"Kiwoom Heros",abbr:"KH",gp:1,w:0,l:1,d:0,r:0,ra:6,streak:"L1",l10:"0-1"}
 ];
 const seasonGames=30;
 const navBtns=document.querySelectorAll(".nav-btn");
