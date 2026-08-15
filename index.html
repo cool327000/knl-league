@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KNL LEAGUE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brand-mark">K</span><div><strong>KNL LEAGUE</strong><small>BASEBALL LEAGUE</small></div></div>
+  <nav>
+    <button class="nav-btn active" data-page="home">HOME</button>
+    <button class="nav-btn" data-page="standings">STANDINGS</button>
+    <button class="nav-btn" data-page="schedule">SCHEDULE</button>
+    <button class="nav-btn" data-page="teams">TEAMS</button>
+    <button class="nav-btn" data-page="stats">STATS</button>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="page active">
+    <div class="hero">
+      <div>
+        <p class="eyebrow">SEASON 2026</p>
+        <h1>KNL <span>LEAGUE</span></h1>
+        <p class="hero-copy">Official league hub for standings, schedules, teams and statistics.</p>
+        <button class="primary" data-jump="standings">VIEW STANDINGS →</button>
+      </div>
+      <div class="hero-card">
+        <p>NEXT GAME</p>
+        <div class="matchup"><span>YOMURI GIANTS</span><b>VS</b><span>SAMSUNG LIONS</span></div>
+        <div class="next-time">21:30 KST · GAME 2</div>
+      </div>
+    </div>
+    <div class="grid-3">
+      <div class="card"><p class="muted">LEAGUE LEADER</p><h2 id="leaderName">Yomuri Giants</h2><strong id="leaderRecord">1 - 0</strong></div>
+      <div class="card"><p class="muted">GAMES PLAYED</p><h2 id="gamesPlayed">1</h2><span>of 30 games</span></div>
+      <div class="card"><p class="muted">LATEST RESULT</p><h2>Yomuri Giants</h2><span>W 6 - 3 Samsung Lions</span></div>
+    </div>
+  </section>
+
+  <section id="standings" class="page">
+    <div class="section-head"><div><p class="eyebrow">SEASON 2026</p><h2>STANDINGS</h2></div><span class="pill">30 GAME SEASON</span></div>
+    <div class="table-wrap">
+      <table id="standingsTable">
+        <thead><tr><th>RK</th><th class="left">TEAM</th><th>GP</th><th>W</th><th>L</th><th>D</th><th>PCT</th><th>GB</th><th>R</th><th>RA</th><th>RD</th><th>STREAK</th><th>MN</th><th>L10</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="hint">MN = Magic Number · R = Runs · RA = Runs Allowed · RD = Run Differential</p>
+  </section>
+
+  <section id="schedule" class="page">
+    <div class="section-head"><div><p class="eyebrow">SEASON 2026</p><h2>SCHEDULE</h2></div></div>
+    <div id="scheduleList" class="schedule-list"></div>
+  </section>
+
+  <section id="teams" class="page">
+    <div class="section-head"><div><p class="eyebrow">LEAGUE TEAMS</p><h2>TEAMS</h2></div></div>
+    <div id="teamGrid" class="team-grid"></div>
+  </section>
+
+  <section id="stats" class="page">
+    <div class="section-head"><div><p class="eyebrow">LEAGUE DATA</p><h2>STATS</h2></div></div>
+    <div class="stats-grid" id="statsGrid"></div>
+  </section>
+</main>
+
+<footer>KNL LEAGUE · SEASON 2026 · OFFICIAL LEAGUE SITE</footer>
+<script src="script.js"></script>
+</body>
+</html>
