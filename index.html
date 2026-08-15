@@ -61,11 +61,58 @@
     <div id="teamGrid" class="team-grid"></div>
   </section>
 
-  <section id="stats" class="page">
-    <div class="section-head"><div><p class="eyebrow">LEAGUE DATA</p><h2>STATS</h2></div></div>
-    <div class="stats-grid" id="statsGrid"></div>
-  </section>
-</main>
+<section id="stats" class="page">
+  <div class="stats-home">
+
+    <p class="stats-eyebrow">LEAGUE DATA</p>
+    <h2 class="stats-title">STATS</h2>
+
+    <p class="stats-description">
+      Search KNL LEAGUE players, teams and league statistics
+    </p>
+
+    <div class="stats-search">
+      <select id="statsSearchType">
+        <option value="main">Main</option>
+        <option value="player">Players</option>
+        <option value="team">Teams</option>
+      </select>
+
+      <input
+        type="text"
+        id="statsSearchInput"
+        placeholder="Enter player or team..."
+      >
+
+      <button id="statsSearchButton">⌕</button>
+    </div>
+
+    <div class="stats-buttons">
+      <button class="stats-button" data-stats-page="leaderboards">
+        View Leaderboards ↗
+      </button>
+
+      <button class="stats-button" data-stats-page="teams">
+        Team Rosters ▦
+      </button>
+
+      <button class="stats-button" data-stats-page="compare">
+        Compare Players ♙
+      </button>
+
+      <button class="stats-button" data-stats-page="records">
+        League Records
+      </button>
+
+      <button class="stats-button" data-stats-page="about">
+        About KNL LEAGUE
+      </button>
+    </div>
+
+    <div id="statsSearchResult" class="stats-search-result"></div>
+
+  </div>
+</section>
 
 <footer>KNL LEAGUE · SEASON 4 · OFFICIAL LEAGUE SITE</footer>
 <script src="script.js"></script>
